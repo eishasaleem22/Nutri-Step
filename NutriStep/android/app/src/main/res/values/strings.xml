@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_app_icon">Ad icon</string>
+    <string name="ad_close">Close ad</string>
+
+</resources>

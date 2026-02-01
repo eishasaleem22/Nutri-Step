@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298456918408",
+    "project_id": "amna-practice",
+    "storage_bucket": "amna-practice.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298456918408:android:025b3e77d5524714e8723d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_projects"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX07GB4pMznq3oxS6CnvZobr8LBhmzXYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

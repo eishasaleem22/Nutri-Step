@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/ad_card_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView android:id="@+id/ad_app_icon"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_marginEnd="8dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/ad_headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ad_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+            <Button android:id="@+id/ad_call_to_action"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <!-- in res/layout/native_ad_layout.xml -->
+        <ImageView
+            android:id="@+id/ad_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="@drawable/close_circle_bg"
+            android:src="@drawable/ic_close_white"
+            android:contentDescription="@string/ad_close"
+            android:clickable="true"
+            android:translationZ="4dp"/>
+
+        <com.google.android.gms.ads.nativead.AdChoicesView
+            android:id="@+id/ad_choices_view"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:padding="4dp"/>
+    </FrameLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>
